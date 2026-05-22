@@ -1,9 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/biko");
 
-* {
-  font-family: "Biko", sans-serif;
-}
-
 *,
 *::before,
 *::after {
@@ -119,6 +115,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: "Biko", sans-serif;
 }
 ol,
 ul {
@@ -231,21 +228,26 @@ nav {
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     top: 60px;
     right: 0px;
     background-color: white;
     border-radius: 0px;
-    padding: 20px;
     border-radius: 8px;
-    gap: 10px;
     z-index: 3;
 
     a {
       color: black;
       text-decoration: none;
+      text-align: center;
       font-size: 18px;
+      padding: 15px 20px;
+      border-bottom: 1px solid rgb(212, 212, 212);
     }
+
+    a:last-child {
+      border-bottom: none;
+    }
+
   }
 }
 
@@ -268,7 +270,7 @@ nav {
 
   h1 {
     font-size: 80px;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   p {
@@ -370,6 +372,7 @@ nav {
     .news-description {
       font-size: 20px;
       margin-top: 10px;
+      overflow: hidden;
     }
 
     .cta-container {
@@ -536,7 +539,7 @@ footer {
 }
 
 .hidden{
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 768px) {
